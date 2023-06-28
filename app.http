@@ -1,10 +1,13 @@
 GET http://localhost:8000/states/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjg3OTUzMzQzfQ.o2ClwOGXwWueKUSWr7lsTAH_9zCEOYMbq75VyKwaTps
 ###
 
 GET http://localhost:8000/states/5/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjg3OTUzMzQzfQ.o2ClwOGXwWueKUSWr7lsTAH_9zCEOYMbq75VyKwaTps
 ###
 
 POST http://localhost:8000/districts/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjg3OTUzMzQzfQ.o2ClwOGXwWueKUSWr7lsTAH_9zCEOYMbq75VyKwaTps
 Content-Type: application/json
 
 {
@@ -18,12 +21,15 @@ Content-Type: application/json
 ###
 
 GET http://localhost:8000/districts/3/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjg3OTUzMzQzfQ.o2ClwOGXwWueKUSWr7lsTAH_9zCEOYMbq75VyKwaTps
 ###
 
 DELETE http://localhost:8000/districts/4/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjg3OTUzMzQzfQ.o2ClwOGXwWueKUSWr7lsTAH_9zCEOYMbq75VyKwaTps
 ###
 
 PUT http://localhost:8000/districts/5/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjg3OTUzMzQzfQ.o2ClwOGXwWueKUSWr7lsTAH_9zCEOYMbq75VyKwaTps
 Content-Type: application/json
 
 {
@@ -37,9 +43,11 @@ Content-Type: application/json
 ###
 
 GET http://localhost:8000/states/7/stats/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjg3OTUzMzQzfQ.o2ClwOGXwWueKUSWr7lsTAH_9zCEOYMbq75VyKwaTps
 ###
 
-GET http://localhost:8000/districts/8/details/
+GET http://localhost:8000/districts/2/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjg3OTUzMzQzfQ.o2ClwOGXwWueKUSWr7lsTAH_9zCEOYMbq75VyKwaTps
 ###
 
 ###
@@ -47,6 +55,6 @@ POST http://localhost:8000/login/
 Content-Type: application/json
 
 {
-  "username": "christopher_phillip",
+  "username": "christopher_phillips",
   "password": "christy@123"
 }

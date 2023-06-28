@@ -67,7 +67,7 @@ function authenticateToken(request, response, next) {
     response.status(401);
     response.send("Invalid JWT Token");
   } else {
-    jwtToken.verify(jwtToken, "MY_SECRET_TOKEN", async (error, payload) => {
+    jwt.verify(jwtToken, "MY_SECRET_TOKEN", async (error, payload) => {
       if (error) {
         response.status(401);
         response.send("Invalid JWT Token");
@@ -81,8 +81,7 @@ function authenticateToken(request, response, next) {
 //
 app.post("/login/", async (request, response) => {
   const { username, password } = request.body;
-  console.log(username);
-  const selectUserQuery = `SELECT * FROM user WHERE username = ${username};`;
+  const selectUserQuery = `SELECT * FROM user WHERE username = '${username}';`;
   const databaseUser = await db.get(selectUserQuery);
   if (databaseUser === undefined) {
     response.status(400);
